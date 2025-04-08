@@ -6,10 +6,10 @@ Simple and Useful Snippets for [React Router v7](https://reactrouter.com/)
 
 ### Configuring Routes
 
-[./images/configuring-routes.gif]
+![Configuring Routes](./images/configuring-routes.gif)
 
 ### Implement Page
 
-[./images/implement-page.gif]
+![ Implement Page](./images/implement-page.gif)
 
 ## Snippets
