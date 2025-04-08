@@ -1,11 +1,13 @@
 {
   "name": "react-router-snippets",
-  "displayName": "React Router Snippets",
+  "displayName": "React Router Framework Snippets",
+  "publisher": "ikoamu",
   "description": "",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.99.0"
   },
+  "icon": "images/rr_logo_dark.png",
   "categories": [
     "Snippets"
   ],
