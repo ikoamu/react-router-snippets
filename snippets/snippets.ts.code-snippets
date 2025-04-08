@@ -1,0 +1,178 @@
+{
+  // for routes.ts snippets
+  "Index Route Snippet": {
+    "description": "Index Route Snippet",
+    "prefix": [
+      "irt",
+      "ind",
+    ],
+    "body": "index(\"${1:file}\"),",
+  },
+  "Route Snippet": {
+    "description": "Route Snippet",
+    "prefix": [
+      "rt",
+    ],
+    "body": "route(\"${1:pattern}\", \"${2:file}\"),",
+  },
+  "Nested Routes Snippet": {
+    "description": "Nested Routes Snippet",
+    "prefix": [
+      "nrt",
+      "nest",
+    ],
+    "body": [
+      "route(\"${1:parent}\", \"${2:file}\", [",
+      "  $3",
+      "]),"
+    ]
+  },
+  "Layout Routes Snippet": {
+    "description": "Layout Routes Snippet",
+    "prefix": [
+      "lrt",
+      "lay",
+    ],
+    "body": [
+      "layout(\"${1:file}\", [",
+      "  $2",
+      "]),"
+    ]
+  },
+  "Route Prefix Snippet": {
+    "description": "Route Prefix Snippet",
+    "prefix": [
+      "prt",
+      "pre",
+    ],
+    "body": [
+      "...prefix(\"${1:pattern}\", [",
+      "  $2",
+      "]),"
+    ]
+  },
+  // for routes/<page>.tsx snippets
+  "Import Route Type Snippet": {
+		"description": "Import Route Type Snippet",
+		"prefix": [
+			"imp",
+		],
+		"body": [
+			"import type { Route } from \"./+types/${1:$TM_FILENAME_BASE}\";",
+		]
+	},
+
+	"Loader Snippet": {
+		"description": "Loader Snippet",
+		"prefix": [
+			"ld",
+		],
+		"body": [
+			"export async function loader({ $1 }: Route.LoaderArgs) {",
+			"  $2",
+			"}"
+		]
+	},
+	"ClientLoader Snippet": {
+		"description": "Client Loader Snippet",
+		"prefix": [
+			"cld"
+		],
+		"body": [
+			"export async function clientLoader({ $1 }: Route.ClientLoaderArgs) {",
+			"  $2",
+			"}"
+		]
+	},
+	"Action Snippet": {
+		"description": "Action Snippet",
+		"prefix": [
+			"ac",
+		],
+		"body": [
+			"export async function action({ $1 }: Route.ActionArgs) {",
+			"  $2",
+			"}"
+		]
+	},
+	"ClientAction Snippet": {
+		"description": "Client Action Snippet",
+		"prefix": [
+			"cac",
+		],
+		"body": [
+			"export async function clientAction({ $1 }: Route.ClientActionArgs) {",
+			"  $2",
+			"}"
+		]
+	},
+  "Client Loader Snippet": {
+    "description": "Client Loader Snippet",
+    "prefix": [
+      "cld"
+    ],
+    "body": [
+      "export async function clientLoader({ $1 }: Route.ClientLoaderArgs) {",
+      "  $2",
+      "}"
+    ]
+  },
+  "headers() Snippet": {
+		"description": "headers() Snippet",
+		"prefix": [
+			"headers",
+		],
+		"body": [
+			"export function headers() {",
+			"  $1",
+			"  return { $2 };",
+			"}"
+		]
+	},
+	"Route handle Snippet": {
+		"description": "Route handle Snippet",
+		"prefix": [
+			"handle",
+		],
+		"body": [
+			"export const handle = {",
+			"  $1",
+			"};"
+		]
+	},
+	"links() Snippet": {
+		"description": "links() Snippet",
+		"prefix": [
+			"links",
+		],
+		"body": [
+			"export function links() {",
+			"  $1",
+			"  return [ $2 ];",
+			"};"
+		]
+	},
+	"meta() Snippet": {
+		"description": "meta() Snippet",
+		"prefix": [
+			"meta",
+		],
+		"body": [
+			"export function meta() {",
+			"  $1",
+			"  return [ $2 ];",
+			"};"
+		]
+	},
+	"shouldRevalidate Snippet": {
+		"description": "shouldRevalidate Snippet",
+		"prefix": [
+			"srv",
+		],
+		"body": [
+			"export function shouldRevalidate(arg: ShouldRevalidateFunctionArgs) {",
+			"  return ${1:true}",
+			"}"
+		]
+	},
+}

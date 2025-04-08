@@ -1,0 +1,43 @@
+{
+  "Route Component Snippet": {
+    "description": "Route Component Snippet",
+    "prefix": [
+      "rc",
+    ],
+    "body": [
+      "export default function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} ({",
+      "$2",
+      " }: Route.ComponentProps) {",
+      "  return (",
+      "    ${3:<></>}",
+      "  );",
+      "}"
+    ]
+  },
+	"ErrorBoundary Snippet": {
+		"description": "ErrorBoundary Snippet",
+		"prefix": [
+			"eb",
+		],
+		"body": [
+			"export function ErrorBoundary() {",
+			"  return (",
+			"    ${2:<></>}",
+			"  )",
+			"}"
+		]
+	},
+	"HydrateFallback Snippet": {
+		"description": "HydrateFallback Snippet",
+		"prefix": [
+			"hf",
+		],
+		"body": [
+			"export function HydrateFallback() {",
+			"  return (",
+			"    ${2:<></>}",
+			"  )",
+			"}"
+		]
+	},
+}
