@@ -9,6 +9,16 @@
   "categories": [
     "Snippets"
   ],
+  "keywords": [
+    "snippet",
+    "React",
+    "React Router"
+  ],
+  "pricing": "Free",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ikoamu/react-router-snippets"
+  },
   "contributes": {
     "snippets": [
       {

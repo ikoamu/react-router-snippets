@@ -4,9 +4,9 @@ Simple and Useful Snippets for [React Router v7](https://reactrouter.com/)
 
 ## Demo
 
-| Configuring Routes                                     | Implement Page                                  |
-| ------------------------------------------------------ | ----------------------------------------------- |
-| ![Configuring Routes](./images/configuring-routes.gif) | ![ Implement Page](./images/implement-page.gif) |
+| Configuring Routes                                   | Implement Page                                |
+| ---------------------------------------------------- | --------------------------------------------- |
+| ![Configuring Routes](images/configuring-routes.gif) | ![ Implement Page](images/implement-page.gif) |
 
 ## Snippets
 
