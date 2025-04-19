@@ -61,14 +61,13 @@
 			"import type { Route } from \"./+types/${1:$TM_FILENAME_BASE}\";",
 		]
 	},
-
 	"Loader Snippet": {
 		"description": "Loader Snippet",
 		"prefix": [
 			"ld",
 		],
 		"body": [
-			"export async function loader({ $1 }: Route.LoaderArgs) {",
+      "export async function loader(${1:{ \\}: Route.LoaderArgs}) {",
 			"  $2",
 			"}"
 		]
@@ -79,7 +78,7 @@
 			"cld"
 		],
 		"body": [
-			"export async function clientLoader({ $1 }: Route.ClientLoaderArgs) {",
+			"export async function clientLoader(${1:{ \\}: Route.ClientLoaderArgs}) {",
 			"  $2",
 			"}"
 		]
@@ -90,7 +89,7 @@
 			"ac",
 		],
 		"body": [
-			"export async function action({ $1 }: Route.ActionArgs) {",
+			"export async function action(${1:{ \\}: Route.ActionArgs}) {",
 			"  $2",
 			"}"
 		]
@@ -101,7 +100,7 @@
 			"cac",
 		],
 		"body": [
-			"export async function clientAction({ $1 }: Route.ClientActionArgs) {",
+			"export async function clientAction(${1:{ \\}: Route.ClientActionArgs}) {",
 			"  $2",
 			"}"
 		]
@@ -112,7 +111,7 @@
       "cld"
     ],
     "body": [
-      "export async function clientLoader({ $1 }: Route.ClientLoaderArgs) {",
+      "export async function clientLoader(${1:{ \\}: Route.ClientLoaderArgs}) {",
       "  $2",
       "}"
     ]
@@ -148,7 +147,7 @@
 		"body": [
 			"export function links() {",
 			"  $1",
-			"  return [ $2 ];",
+			"  return [];",
 			"};"
 		]
 	},
@@ -170,8 +169,8 @@
 			"srv",
 		],
 		"body": [
-			"export function shouldRevalidate(arg: ShouldRevalidateFunctionArgs) {",
-			"  return ${1:true}",
+			"export function shouldRevalidate(${1:arg: ShouldRevalidateFunctionArgs}) {",
+			"  return ${2:true};",
 			"}"
 		]
 	},

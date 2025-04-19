@@ -5,9 +5,7 @@
       "rc",
     ],
     "body": [
-      "export default function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} ({",
-      "$2",
-      " }: Route.ComponentProps) {",
+      "export default function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} (${2:{ \\}: Route.ComponentProps}) {",
       "  return (",
       "    ${3:<></>}",
       "  );",
@@ -22,7 +20,7 @@
 		"body": [
 			"export function ErrorBoundary() {",
 			"  return (",
-			"    ${2:<></>}",
+			"    ${1:<></>}",
 			"  )",
 			"}"
 		]
@@ -35,8 +33,8 @@
 		"body": [
 			"export function HydrateFallback() {",
 			"  return (",
-			"    ${2:<></>}",
-			"  )",
+			"    ${1:<></>}",
+			"  );",
 			"}"
 		]
 	},
